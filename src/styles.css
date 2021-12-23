@@ -57,6 +57,17 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    justify-content: space-around;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+h5{
+    margin: 0;
+    font-size: 20px;
+}
+
 p {
     margin: 0;
     font-weight: 50;
@@ -169,4 +180,48 @@ hr {
 a {
     text-decoration: none;
     color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    h3{
+        display: none;
+    }
+
+    ul {
+        display: none;
+        background-color: #363849;
+        margin: 0;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #363849;
+    }
+
+    .logo{
+        display: none;
+    }
 }
