@@ -77,6 +77,8 @@ p {
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .hero-area{
@@ -145,8 +147,13 @@ p {
     border-radius: 100px;
 }
 
-.project-title {
+.projects-title {
     margin-bottom: 20px;
+}
+
+.project-title {
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 .project-card {
@@ -162,7 +169,7 @@ p {
 }
 
 .project-image {
-    margin-top: 25px;
+    margin-top: 10px;
     width: 250px;
     border-radius: 125px;
 }
